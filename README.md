@@ -18,3 +18,21 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+## initial Settings
+```bash
+$ yarn create nuxt-app nuxtjs_tips
+✨  Generating Nuxt.js project in nuxtjs_tips
+? Project name: nuxtjs_tips
+? Programming language: TypeScript
+? Package manager: Yarn
+? UI framework: Element
+? Nuxt.js modules: (Press <space> to select, <a> to toggle all, <i> to invert selection)
+? Linting tools: (Press <space> to select, <a> to toggle all, <i> to invert selection)
+? Testing framework: Jest
+? Rendering mode: Single Page App
+? Deployment target: Server (Node.js hosting)
+? Development tools: (Press <space> to select, <a> to toggle all, <i> to invert selection)
+? Continuous integration: None
+? Version control system: Git
+```
