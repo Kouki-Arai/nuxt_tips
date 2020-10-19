@@ -19,7 +19,7 @@ $ yarn generate
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
-## initial Settings
+## Create Project
 ```bash
 $ yarn create nuxt-app nuxtjs_tips
 ✨  Generating Nuxt.js project in nuxtjs_tips
