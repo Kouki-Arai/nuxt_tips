@@ -1,4 +1,15 @@
+const envPath = `config/.env.${process.env.ENV || 'local'}`
+require('dotenv').config({
+  path: envPath
+})
+const { BASE_URL } = process.env
 export default {
+  dotenv: {
+    filename: envPath
+  },
+  env: {
+      BASE_URL
+  },
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
 

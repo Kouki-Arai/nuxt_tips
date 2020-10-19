@@ -4,13 +4,18 @@
   "private": true,
   "scripts": {
     "dev": "nuxt-ts",
-    "build": "nuxt-ts build",
-    "start": "nuxt-ts start",
+    "build-local": "ENV=local nuxt-ts build",
+    "build-dev": "ENV=dev nuxt-ts build",
+    "build-prod": "ENV=prod nuxt-ts build",
+    "start-local": "ENV=local nuxt-ts start",
+    "start-dev": "ENV=dev nuxt-ts start",
+    "start-prod": "ENV=prod nuxt-ts start",
     "generate": "nuxt-ts generate",
     "test": "jest"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",
+    "@nuxtjs/dotenv": "^1.4.1",
     "core-js": "^3.6.5",
     "element-ui": "^2.13.2",
     "nuxt": "^2.14.6"
