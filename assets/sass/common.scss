@@ -1,0 +1,43 @@
+.t-center {
+  text-align: center;
+}
+
+.t-right {
+  text-align: right;
+}
+
+.t-left {
+  text-align: left;
+}
+
+.m-btm {
+  &--10 {
+    margin-bottom: 10px !important;
+  }
+
+  &--m15 {
+    margin-bottom: -15px !important;
+  }
+
+  &--20 {
+    margin-bottom: 20px !important;
+  }
+
+  &--30 {
+    margin-bottom: 30px !important;
+  }
+}
+
+.m-top {
+  &--10 {
+    margin-top: 10px;
+  }
+
+  &--20 {
+    margin-top: 20px;
+  }
+
+  &--30 {
+    margin-top: 30px;
+  }
+}

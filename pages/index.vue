@@ -24,6 +24,9 @@
         </a>
       </div>
     </div>
+    <ul>
+      <li><router-link to="/validation">validation</router-link></li>
+    </ul>
   </div>
 </template>
 

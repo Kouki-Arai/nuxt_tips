@@ -36,3 +36,8 @@ $ yarn create nuxt-app nuxtjs_tips
 ? Continuous integration: None
 ? Version control system: Git
 ```
+
+## usege sass
+```bash
+$ yarn add sass-loader node-sass
+```
