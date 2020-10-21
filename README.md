@@ -9,9 +9,13 @@ $ yarn install
 # serve with hot reload at localhost:3000
 $ yarn dev
 
+# build for development and launch server
+$ yarn build-dev
+$ yarn start-dev
+
 # build for production and launch server
-$ yarn build
-$ yarn start
+$ yarn build-prod
+$ yarn start-prod
 
 # generate static project
 $ yarn generate
