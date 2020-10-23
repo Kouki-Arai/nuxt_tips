@@ -15,14 +15,21 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'nuxtjs_tips',
+    title: 'Nuxt.js Tips',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      // FontAwesomeはこれ書くだけでいける↓
+      {
+        rel: "stylesheet",
+        href: "https://use.fontawesome.com/releases/v5.6.3/css/all.css",
+        integrity: "sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/",
+        crossorigin: "anonymous"
+      },
     ]
   },
 
@@ -34,7 +41,8 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+    '@/plugins/vue-sidebar-menu',
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
