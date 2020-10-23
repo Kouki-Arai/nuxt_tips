@@ -28,7 +28,7 @@ export default Vue.extend({
   },
   data() {
     return {
-      value: ""
+      value: <String>""
     };
   },
   watch: {

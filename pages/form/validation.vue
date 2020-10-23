@@ -1,5 +1,5 @@
 <template>
-  <form-page title="バリデーション" title-english="validation">
+  <form-page title="バリデーション" title-english="Validation">
     <template slot="form">
       <base-input label title="メールアドレス" v-model="formData.email"></base-input>
       {{checkEmail}}
@@ -9,6 +9,11 @@
     <template slot="send">
       <!-- <form-button-send :loading="loading" title="ログイン" @click="login" :showPrivacyPolicy="false"></form-button-send>
       <form-button-other-action @click="handleForgetPassword" class="forget" title="パスワードを忘れた場合"></form-button-other-action> -->
+      <comment>
+        <ul>
+          <li>TODO: エラーのタイミング、エラー時の色付け、ボタン設置</li>
+        </ul>
+      </comment>
     </template>
   </form-page>
 </template>
