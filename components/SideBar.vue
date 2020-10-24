@@ -19,6 +19,17 @@ export default Vue.extend({
           title: 'Nuxt.js Tips',
           icon: 'fas fa-home'
         },
+        {
+          title: 'Sass',
+          icon: 'fab fa-sass',
+          child: [
+              {
+                href: '/sass/set_up',
+                title: 'Set Up',
+                icon: 'fas fa-circle'
+              }
+          ]
+        },
         // {
         //   href: '/validation',
         //   title: 'Validation',
@@ -47,6 +58,6 @@ export default Vue.extend({
 </script>
 <style lang="scss" scoped>
 .v-sidebar-menu{
-  background-color: rgb(61,197,142);
+  background-color: $main;
 }
 </style>
