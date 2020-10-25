@@ -4,7 +4,7 @@
       <comment>
         <ol>
           <li><base-code>$ yarn add sass-loader node-sass</base-code></li>
-          <li><base-code>yarn add -D @nuxtjs/style-resources</base-code></li>
+          <li><base-code>$ yarn add -D @nuxtjs/style-resources</base-code></li>
           <li>Add @nuxtjs/style-resources to buildModules section of nuxt.config.js</li>
 <base-code>export default {
   buildModules: [

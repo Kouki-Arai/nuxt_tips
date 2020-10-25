@@ -31,6 +31,52 @@ export default Vue.extend({
           ]
         },
         {
+          title: 'property',
+          icon: 'fa fa-chart-area',
+          child: [
+              {
+                href: '/form/validation',
+                title: 'data',
+                icon: 'fas fa-circle'
+              },
+              {
+                href: '/form/validation',
+                title: 'props',
+                icon: 'fas fa-circle'
+              },
+              {
+                href: '/form/limit_character',
+                title: 'created',
+                icon: 'fas fa-circle'
+              },
+              {
+                href: '/form/validation',
+                title: 'mounted',
+                icon: 'fas fa-circle'
+              },
+              {
+                href: '/form/limit_character',
+                title: 'computed',
+                icon: 'fas fa-circle'
+              },
+              {
+                href: '/form/validation',
+                title: 'methods',
+                icon: 'fas fa-circle'
+              },
+              {
+                href: '/form/limit_character',
+                title: 'watch',
+                icon: 'fas fa-circle'
+              },
+              {
+                href: '/form/validation',
+                title: 'filter',
+                icon: 'fas fa-circle'
+              },
+          ]
+        },
+        {
           title: 'Form',
           icon: 'fa fa-chart-area',
           child: [
