@@ -3,22 +3,22 @@
     <template slot="send">
       <comment>
         <ol>
-          <li>yarn add sass-loader node-sass</li>
-          <li>yarn add -D @nuxtjs/style-resources</li>
+          <li><base-code>$ yarn add sass-loader node-sass</base-code></li>
+          <li><base-code>yarn add -D @nuxtjs/style-resources</base-code></li>
           <li>Add @nuxtjs/style-resources to buildModules section of nuxt.config.js</li>
-          <p>export default {
-            buildModules: [
-              '@nuxtjs/style-resources',
-            ],
+<base-code>export default {
+  buildModules: [
+    '@nuxtjs/style-resources',
+  ],
 
-            styleResources: {
-            // your settings here
-            sass: [],
-            scss: [],
-            less: [],
-            stylus: []
-            }
-          }</p>
+  styleResources: {
+    // your settings here
+    sass: [],
+    scss: [],
+    less: [],
+    stylus: []
+  }
+}</base-code>
         </ol>
       </comment>
     </template>
@@ -27,10 +27,12 @@
 <script lang="ts">
 import Vue from 'vue'
 import FormPage from "~/components/FormPage.vue";
+import BaseCode from "~/components/BaseCode.vue";
 export default Vue.extend({
   name: "set-up",
   components: {
-    FormPage
+    FormPage,
+    BaseCode
   },
   data(){
     return {

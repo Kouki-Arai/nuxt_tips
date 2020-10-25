@@ -1,0 +1,21 @@
+<template>
+  <pre><code><slot></slot></code>
+  </pre>
+</template>
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+
+})
+</script>
+<style lang="scss" scoped>
+code {
+  font-family: Consolas, Menlo, Monaco, -apple-system, BlinkMacSystemFont, "Segoe UI", Meiryo, monospace;
+  display: inline-block;
+  padding: 0.1em 0.25em; /* 文字周りの余白 */
+  color: #444; /* 文字色 */
+  background-color: #e7edf3; /* 背景色 */
+  border-radius: 3px; /* 角丸 */
+  border: solid 1px #d6dde4; /* 枠線 */
+}
+</style>

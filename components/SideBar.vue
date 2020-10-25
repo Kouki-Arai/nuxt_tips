@@ -30,11 +30,6 @@ export default Vue.extend({
               }
           ]
         },
-        // {
-        //   href: '/validation',
-        //   title: 'Validation',
-        //   icon: 'fas fa-share-alt'
-        // },
         {
           title: 'Form',
           icon: 'fa fa-chart-area',
@@ -50,7 +45,12 @@ export default Vue.extend({
                 icon: 'fas fa-circle'
               }
           ]
-        }
+        },
+        {
+          href: '/polling',
+          title: 'Polling',
+          icon: 'fas fa-bullseye'
+        },
       ]
     }
   }
