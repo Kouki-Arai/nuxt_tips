@@ -31,46 +31,92 @@ export default Vue.extend({
           ]
         },
         {
-          title: 'property',
+          title: ' Vue Property',
           icon: 'fa fa-chart-area',
           child: [
               {
-                href: '/form/validation',
+                // href: '/form/validation',
                 title: 'data',
                 icon: 'fas fa-circle'
               },
               {
-                href: '/form/validation',
+                // href: '/form/validation',
                 title: 'props',
                 icon: 'fas fa-circle'
               },
               {
-                href: '/form/limit_character',
+                // href: '/form/limit_character',
                 title: 'created',
                 icon: 'fas fa-circle'
               },
               {
-                href: '/form/validation',
+                // href: '/form/validation',
                 title: 'mounted',
                 icon: 'fas fa-circle'
               },
               {
-                href: '/form/limit_character',
+                // href: '/form/limit_character',
                 title: 'computed',
                 icon: 'fas fa-circle'
               },
               {
-                href: '/form/validation',
+                // href: '/form/validation',
                 title: 'methods',
                 icon: 'fas fa-circle'
               },
               {
-                href: '/form/limit_character',
+                // href: '/form/limit_character',
                 title: 'watch',
                 icon: 'fas fa-circle'
               },
               {
-                href: '/form/validation',
+                // href: '/form/validation',
+                title: 'filter',
+                icon: 'fas fa-circle'
+              },
+          ]
+        },
+        {
+          title: 'v-attribute',
+          icon: 'fa fa-chart-area',
+          child: [
+              {
+                // href: '/form/validation',
+                title: 'v-bind',
+                icon: 'fas fa-circle'
+              },
+              {
+                // href: '/form/validation',
+                title: 'props',
+                icon: 'fas fa-circle'
+              },
+              {
+                // href: '/form/limit_character',
+                title: 'created',
+                icon: 'fas fa-circle'
+              },
+              {
+                // href: '/form/validation',
+                title: 'mounted',
+                icon: 'fas fa-circle'
+              },
+              {
+                // href: '/form/limit_character',
+                title: 'computed',
+                icon: 'fas fa-circle'
+              },
+              {
+                // href: '/form/validation',
+                title: 'methods',
+                icon: 'fas fa-circle'
+              },
+              {
+                // href: '/form/limit_character',
+                title: 'watch',
+                icon: 'fas fa-circle'
+              },
+              {
+                // href: '/form/validation',
                 title: 'filter',
                 icon: 'fas fa-circle'
               },
