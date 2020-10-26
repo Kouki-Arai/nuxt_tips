@@ -14,11 +14,8 @@
       <base-input label title="パスワード" v-model="button.password" password :isValid="buttonCheck.password"></base-input>
     </template>
     <template slot="send">
-      <form-button-send :loading="loading" title="ボタン" @click="send"></form-button-send>
+      <form-button-send title="イベント発火" @click="send"></form-button-send>
       <comment>
-        <ul>
-          <li>TODO: エラー時の色付け、blurイベントver</li>
-        </ul>
       </comment>
     </template>
   </form-page>
