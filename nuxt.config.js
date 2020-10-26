@@ -39,6 +39,14 @@ export default {
     { src: '~/assets/sass/app.scss', lang: 'scss' },
   ],
 
+  styleResources: {
+    scss: [
+      '~/assets/sass/color.scss',
+      // '~/assets/scss/typography.scss',
+      // '~/assets/scss/effect.scss',
+    ]
+  },
+
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
     '@/plugins/element-ui',
@@ -52,10 +60,12 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
+    '@nuxtjs/style-resources'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
+
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

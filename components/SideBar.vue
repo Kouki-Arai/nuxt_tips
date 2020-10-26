@@ -19,11 +19,63 @@ export default Vue.extend({
           title: 'Nuxt.js Tips',
           icon: 'fas fa-home'
         },
-        // {
-        //   href: '/validation',
-        //   title: 'Validation',
-        //   icon: 'fas fa-share-alt'
-        // },
+        {
+          title: 'Sass',
+          icon: 'fab fa-sass',
+          child: [
+              {
+                href: '/sass/set_up',
+                title: 'Set Up',
+                icon: 'fas fa-circle'
+              }
+          ]
+        },
+        {
+          title: 'property',
+          icon: 'fa fa-chart-area',
+          child: [
+              {
+                href: '/form/validation',
+                title: 'data',
+                icon: 'fas fa-circle'
+              },
+              {
+                href: '/form/validation',
+                title: 'props',
+                icon: 'fas fa-circle'
+              },
+              {
+                href: '/form/limit_character',
+                title: 'created',
+                icon: 'fas fa-circle'
+              },
+              {
+                href: '/form/validation',
+                title: 'mounted',
+                icon: 'fas fa-circle'
+              },
+              {
+                href: '/form/limit_character',
+                title: 'computed',
+                icon: 'fas fa-circle'
+              },
+              {
+                href: '/form/validation',
+                title: 'methods',
+                icon: 'fas fa-circle'
+              },
+              {
+                href: '/form/limit_character',
+                title: 'watch',
+                icon: 'fas fa-circle'
+              },
+              {
+                href: '/form/validation',
+                title: 'filter',
+                icon: 'fas fa-circle'
+              },
+          ]
+        },
         {
           title: 'Form',
           icon: 'fa fa-chart-area',
@@ -39,7 +91,12 @@ export default Vue.extend({
                 icon: 'fas fa-circle'
               }
           ]
-        }
+        },
+        {
+          href: '/polling',
+          title: 'Polling',
+          icon: 'fas fa-bullseye'
+        },
       ]
     }
   }
@@ -47,6 +104,6 @@ export default Vue.extend({
 </script>
 <style lang="scss" scoped>
 .v-sidebar-menu{
-  background-color: rgb(61,197,142);
+  background-color: $main;
 }
 </style>

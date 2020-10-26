@@ -12,8 +12,7 @@
   const TITLE_TAG_LIST = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
 
   export default Vue.extend({
-    name: "BaseHeading",
-    components: {},
+    name: "base-heading",
     props: {
       tagLevel: {
         type: String as PropType<string>,
@@ -23,21 +22,17 @@
         }
       },
     },
-    data() {
-      return {}
-    },
-    mounted() {
-    },
-    methods: {
-      handleClick(){
-        //@ts-ignore
-        this.$emit('click');
-      }
-    },
+
     computed: {
       titleClass() {
         const levelNumber = parseInt(this.tagLevel.replace('h', ''));
         return `heading-${levelNumber}`;
+      }
+    },
+
+    methods: {
+      handleClick(){
+        this.$emit('click');
       }
     }
   })
