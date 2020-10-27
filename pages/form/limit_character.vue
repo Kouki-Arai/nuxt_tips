@@ -15,7 +15,7 @@
   </form-page>
 </template>
 <script lang="ts">
-import Vue from 'vue'
+import Vue, {PropType} from 'vue'
 import FormPage from "~/components/FormPage.vue";
 import BaseInput from "~/components/BaseInput.vue";
 import Comment from "~/components/Comment.vue";
@@ -28,17 +28,17 @@ export default Vue.extend({
   },
   data(){
     return {
-      sample: '',
-      sample2: ''
+      sample: <string>'',
+      sample2: <string>''
     }
   },
 
   watch: {
-    sample(val) {
+    sample(val: string) {
       // @ts-ignore
       this.$refs.baseInput.value = this.charaLimit(val, 5);
     },
-    sample2(val) {
+    sample2(val: string) {
       this.sample2 = this.charaLimit(val, 5);
     }
   },

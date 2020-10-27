@@ -71,5 +71,14 @@ export default {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
     transpile: [/^element-ui/],
+    extend(config, ctx) {
+      const svgRule = config.module.rules.find(rule => rule.test.test('.svg'));
+      svgRule.test = /\.(png|jpe?g|gif|webp)$/i;
+
+      config.module.rules.push({
+        test: /\.svg$/,
+        use: ['vue-svg-loader']
+      });
+    },
   }
 }

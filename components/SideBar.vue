@@ -31,6 +31,17 @@ export default Vue.extend({
           ]
         },
         {
+          title: 'TypeScript',
+          icon: 'fa fa-code',
+          child: [
+              {
+                href: '/typescript/usage',
+                title: 'Usage',
+                icon: 'fas fa-circle'
+              }
+          ]
+        },
+        {
           title: ' Vue Property',
           icon: 'fa fa-chart-area',
           child: [
@@ -142,6 +153,11 @@ export default Vue.extend({
           href: '/polling',
           title: 'Polling',
           icon: 'fas fa-bullseye'
+        },
+        {
+          href: '/svg',
+          title: 'SVG',
+          icon: 'far fa-image'
         },
       ]
     }

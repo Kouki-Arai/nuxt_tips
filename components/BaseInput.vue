@@ -8,23 +8,21 @@
       :class="{error: !isValid}"
       @blur="blur"
     ></el-input>
-    <!-- <span v-if="value"> -->
       <i class='fa fa-check-circle fa-2x check-icon' aria-hidden='true' v-show="isValid && value && isInputted"></i>
       <i class='fas fa-exclamation-circle fa-2x times-icon' aria-hidden='true' v-show="!isValid && !!value"></i>
-    <!-- </span> -->
   </div>
 </template>
 <script lang="ts">
-import Vue from 'vue'
+import Vue, {PropType} from 'vue'
 export default Vue.extend({
   props: {
-    title: String,
+    title: String as PropType<string>,
     label: {
       type: Boolean,
       default: false
     },
     placeholder: {
-      type: String,
+      type: String as PropType<string>,
       default: ""
     },
     password: {
