@@ -25,8 +25,7 @@ export default Vue.extend({
       required: true
     },
     titleEnglish: {
-      type: String,
-      required: true
+      type: String
     }
   }
 })

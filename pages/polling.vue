@@ -1,32 +1,50 @@
 <template>
-  <form-page title="SVGファイルの表示">
+  <form-page title="ポーリング" title-english="polling">
     <template slot="form">
-      <base-code>$ yarn add --dev vue-svg-loader</base-code>
-      nuxt.config.js に以下を追加
-      <base-code>build: {
-    transpile: [/^element-ui/],
-    extend(config, ctx) {
-      const svgRule = config.module.rules.find(rule => rule.test.test('.svg'));
-      svgRule.test = /\.(png|jpe?g|gif|webp)$/i;
-
-      config.module.rules.push({
-        test: /\.svg$/,
-        use: ['vue-svg-loader']
-      });
-    },
-  }</base-code>
-      <svg-element name="loading"></svg-element>
+      <comment>
+        TODO: @ts-ignore消す
+        dataに突っ込んで、beforeDestroyでclearすればページごとの制御ができる
+      </comment>
     </template>
   </form-page>
 </template>
 <script lang="ts">
 import Vue from 'vue'
-import SvgElement from '~/components/SvgElement.vue'
 import BaseCode from "~/components/BaseCode.vue";
 export default Vue.extend({
   components: {
-    SvgElement,
     BaseCode
+  },
+  data(){
+    return {
+      isPoling: <Number>0,
+    }
+  },
+
+  mounted() {
+    this.doPolling();
+  },
+
+  beforeDestroy() {
+    // @ts-ignore
+    clearInterval(this.isPoling);
+  },
+
+  methods: {
+    doPolling() {
+      // TODO: ts-ignoreなくす
+      // @ts-ignore
+      this.isPoling = setInterval(()=> {
+        this.open();
+      }, 1000);
+    },
+    open() {
+      this.$notify.success({
+        title: 'Info',
+        message: 'polling test',
+        showClose: false
+      });
+    }
   }
 })
 </script>
