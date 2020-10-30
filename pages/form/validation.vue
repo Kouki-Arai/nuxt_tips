@@ -24,13 +24,15 @@
 import Vue from 'vue'
 import FormPage from "~/components/FormPage.vue";
 import BaseInput from "~/components/BaseInput.vue";
+import BaseHeading from "~/components/BaseHeading.vue";
 import {validEmail} from "~/utils/validation"
 import {validPassword} from "~/utils/validation"
 export default Vue.extend({
   name: "validation",
   components: {
     FormPage,
-    BaseInput
+    BaseInput,
+    BaseHeading
   },
   data(){
     return {

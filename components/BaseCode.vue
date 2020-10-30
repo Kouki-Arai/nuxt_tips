@@ -1,5 +1,6 @@
 <template>
-  <pre><code><slot></slot></code>
+  <pre>
+    <code><slot></slot></code>
   </pre>
 </template>
 <script lang="ts">
@@ -17,5 +18,6 @@ code {
   background-color: #e7edf3; /* 背景色 */
   border-radius: 3px; /* 角丸 */
   border: solid 1px #d6dde4; /* 枠線 */
+  margin: 5px 0;
 }
 </style>

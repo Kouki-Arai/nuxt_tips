@@ -20,6 +20,17 @@ export default Vue.extend({
           icon: 'fas fa-home'
         },
         {
+          title: 'ENV',
+          icon: 'fab fa-sass',
+          child: [
+              {
+                href: '/env',
+                title: 'Set Up',
+                icon: 'fas fa-circle'
+              }
+          ]
+        },
+        {
           title: 'Sass',
           icon: 'fab fa-sass',
           child: [
@@ -37,6 +48,28 @@ export default Vue.extend({
               {
                 href: '/typescript/usage',
                 title: 'Usage',
+                icon: 'fas fa-circle'
+              }
+          ]
+        },
+        {
+          title: 'JavaScript',
+          icon: 'fa fa-code',
+          child: [
+              {
+                href: '/javascript/tips',
+                title: 'Tips',
+                icon: 'fas fa-circle'
+              }
+          ]
+        },
+        {
+          title: 'Font',
+          icon: 'fa fa-code',
+          child: [
+              {
+                href: '/font',
+                title: 'Set Up',
                 icon: 'fas fa-circle'
               }
           ]
@@ -66,7 +99,7 @@ export default Vue.extend({
                 icon: 'fas fa-circle'
               },
               {
-                // href: '/form/limit_character',
+                href: '/vue_property/computed',
                 title: 'computed',
                 icon: 'fas fa-circle'
               },
@@ -81,54 +114,39 @@ export default Vue.extend({
                 icon: 'fas fa-circle'
               },
               {
-                // href: '/form/validation',
+                href: '/vue_property/filter',
                 title: 'filter',
                 icon: 'fas fa-circle'
               },
           ]
         },
         {
+          href: "/v-attribute/v-bind",
+          title: "v-bind",
+          icon: 'fas fa-circle'
+        },
+        {
           title: 'v-attribute',
           icon: 'fa fa-chart-area',
           child: [
               {
-                // href: '/form/validation',
+                href: "/v-attribute/v-bind",
                 title: 'v-bind',
                 icon: 'fas fa-circle'
               },
               {
                 // href: '/form/validation',
-                title: 'props',
+                title: 'v-if/v-show',
                 icon: 'fas fa-circle'
               },
               {
                 // href: '/form/limit_character',
-                title: 'created',
-                icon: 'fas fa-circle'
-              },
-              {
-                // href: '/form/validation',
-                title: 'mounted',
+                title: 'v-for',
                 icon: 'fas fa-circle'
               },
               {
                 // href: '/form/limit_character',
-                title: 'computed',
-                icon: 'fas fa-circle'
-              },
-              {
-                // href: '/form/validation',
-                title: 'methods',
-                icon: 'fas fa-circle'
-              },
-              {
-                // href: '/form/limit_character',
-                title: 'watch',
-                icon: 'fas fa-circle'
-              },
-              {
-                // href: '/form/validation',
-                title: 'filter',
+                title: 'v-model',
                 icon: 'fas fa-circle'
               },
           ]
