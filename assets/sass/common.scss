@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'customFont';
+  // ~@ってやらないと読み込まれない
+  src: url('~@/assets/font/Mplus1p-Regular.ttf') format('truetype');
+}
+
+// 全体にフォントを適応させたい場合は↓このように書く
+// * {
+//   font-family: 'customFont';
+// }
+
 .t-center {
   text-align: center;
 }

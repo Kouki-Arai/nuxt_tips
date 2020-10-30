@@ -51,6 +51,7 @@ export default {
   plugins: [
     '@/plugins/element-ui',
     '@/plugins/vue-sidebar-menu',
+    '@/plugins/filter',
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
