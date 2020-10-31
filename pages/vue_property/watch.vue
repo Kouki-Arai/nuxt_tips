@@ -1,19 +1,9 @@
 <template>
-  <form-page title="filter">
+  <form-page title="watch">
     <template slot="form">
       <base-heading tag-level="h3">グローバル</base-heading>
         <comment>
           {{ number | comma }}
-        </comment>
-      <base-heading tag-level="h3">ローカル</base-heading>
-        <comment>
-          {{ order_pattern | parseOrderPattern }}
-        </comment>
-      <base-heading tag-level="h3">その他</base-heading>
-        <comment>
-          連結することもできて、左から順に実行される。
-          引数も受け取ることができる。
-          {{ message | filterA('arg1') }}
         </comment>
     </template>
   </form-page>
@@ -26,7 +16,7 @@ import BaseButton from "~/components/BaseButton.vue";
 import BaseCode from "~/components/BaseCode.vue";
 import Comment from "~/components/Comment.vue";
 export default Vue.extend({
-  name: "filter",
+  name: "watch",
   components: {
     FormPage,
     BaseHeading,

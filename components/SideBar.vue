@@ -84,7 +84,7 @@ export default Vue.extend({
                 icon: 'fas fa-circle'
               },
               {
-                // href: '/form/validation',
+                href: '/vue_property/props',
                 title: 'props',
                 icon: 'fas fa-circle'
               },
@@ -109,7 +109,7 @@ export default Vue.extend({
                 icon: 'fas fa-circle'
               },
               {
-                // href: '/form/limit_character',
+                href: '/vue_property/watch',
                 title: 'watch',
                 icon: 'fas fa-circle'
               },
@@ -182,8 +182,11 @@ export default Vue.extend({
   }
 })
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .v-sidebar-menu{
   background-color: $main;
+}
+.v-sidebar-menu.vsm_expanded {
+  max-width: 200px !important;
 }
 </style>

@@ -4,6 +4,10 @@
       <base-heading tag-level="h3">フォント変更</base-heading>
         <comment>
           <p class="custom-font">特定のフォント変更</p>
+          <p>グローバルにフォントの変更もできる</p>
+          <base-code>* {
+  font-family: 'customFont';
+}</base-code>
         </comment>
     </template>
   </form-page>
