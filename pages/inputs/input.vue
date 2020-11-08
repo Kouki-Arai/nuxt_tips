@@ -1,35 +1,21 @@
 <template>
-  <form-page title="バリデーション" title-english="Validation">
+  <form-page title="インプットコンポーネント" title-english="input-components">
     <template slot="form">
 
-      <base-heading tag-level="h3">入力中にイベント発火</base-heading>
-      <base-input label title="メールアドレス" v-model="formData.email" :isValid="checkEmail"></base-input>
-      <base-input label title="パスワード" v-model="formData.password" password :isValid="checkPassword"></base-input>
+      <base-heading tag-level="h3">base-input</base-heading>
+      <base-normal-input v-model="email" label title="メールアドレス"></base-normal-input>
+      <base-normal-input v-model="password" label title="パスワード" password></base-normal-input>
 
-      <base-heading tag-level="h3">blurイベント発火</base-heading>
-      <base-input label title="メールアドレス" v-model="blur.email" :isValid="blurCheck.email" @blur="blurEmail"></base-input>
-      <base-input label title="パスワード" v-model="blur.password" password :isValid="blurCheck.password" @blur="blurPassword"></base-input>
+      <!-- <base-input label title="メールアドレス" v-model="formData.email" :isValid="checkEmail"></base-input>
+      <base-input label title="パスワード" v-model="formData.password" password :isValid="checkPassword"></base-input> -->
 
-      <base-heading tag-level="h3">ボタン押してイベント発火</base-heading>
-      <base-input label title="メールアドレス" v-model="button.email" :isValid="buttonCheck.email"></base-input>
-      <base-input label title="パスワード" v-model="button.password" password :isValid="buttonCheck.password"></base-input>
-
-      <base-heading tag-level="h3">el-inputを使わないVer</base-heading>
-      <base-input label title="メールアドレス" v-model="button.email" :isValid="buttonCheck.email"></base-input>
-      <base-input label title="パスワード" v-model="button.password" password :isValid="buttonCheck.password"></base-input>
-
-    </template>
-    <template slot="send">
-      <form-button-send title="イベント発火" @click="send"></form-button-send>
-      <comment>
-      </comment>
     </template>
   </form-page>
 </template>
 <script lang="ts">
 import Vue from 'vue'
 import FormPage from "~/components/FormPage.vue";
-import BaseInput from "~/components/BaseInput.vue";
+// import BaseInput from "~/components/BaseInput.vue";
 import BaseNormalInput from "~/components/BaseNormalInput.vue";
 import BaseHeading from "~/components/BaseHeading.vue";
 import {validEmail} from "~/utils/validation"
@@ -38,33 +24,35 @@ export default Vue.extend({
   name: "validation",
   components: {
     FormPage,
-    BaseInput,
+    // BaseInput,
     BaseNormalInput,
     BaseHeading
   },
   data(){
     return {
-      loading: <Boolean>false,
-      formData: <object> {
-        email: <string> '',
-        password: <string>''
-      },
-      button: <object> {
-        email: <string> '',
-        password: <string>''
-      },
-      buttonCheck: {
-        email: <Boolean> true,
-        password: <Boolean>true
-      },
-      blur: {
-        email: <string> '',
-        password: <string>''
-      },
-      blurCheck: {
-        email: <Boolean> true,
-        password: <Boolean>true
-      },
+      email: <String>'',
+      password: <String>'',
+      // loading: <Boolean>false,
+      // formData: <object> {
+      //   email: <string> '',
+      //   password: <string>''
+      // },
+      // button: <object> {
+      //   email: <string> '',
+      //   password: <string>''
+      // },
+      // buttonCheck: {
+      //   email: <Boolean> true,
+      //   password: <Boolean>true
+      // },
+      // blur: {
+      //   email: <string> '',
+      //   password: <string>''
+      // },
+      // blurCheck: {
+      //   email: <Boolean> true,
+      //   password: <Boolean>true
+      // },
     }
   },
 

@@ -168,6 +168,22 @@ export default Vue.extend({
           ]
         },
         {
+          title: 'Inputs',
+          icon: 'fa fa-chart-area',
+          child: [
+              {
+                href: '/inputs/input',
+                title: 'base-input',
+                icon: 'fas fa-circle'
+              },
+              // {
+              //   href: '/form/limit_character',
+              //   title: 'Limit Character',
+              //   icon: 'fas fa-circle'
+              // }
+          ]
+        },
+        {
           href: '/polling',
           title: 'Polling',
           icon: 'fas fa-bullseye'
